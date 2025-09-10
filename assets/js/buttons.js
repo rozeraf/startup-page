@@ -9,9 +9,10 @@ const generateFirstButtonsContainer = () => {
         <a
           href="${button.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          class="card button button__${button.id}"
+          class="button"
         >
-          <i class="buttonIcon" icon-name="${button.icon}"></i>
+          <img class="buttonIcon" src="chrome/icons/${button.icon}.svg" alt="${button.name}">
+          <span>${button.name}</span>
         </a>
     `;
 
@@ -27,9 +28,10 @@ const generateSecondButtonsContainer = () => {
         <a
           href="${button.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          class="card button button__${button.id}"
+          class="button"
         >
-          <i class="buttonIcon" icon-name="${button.icon}"></i>
+          <img class="buttonIcon" src="chrome/icons/${button.icon}.svg" alt="${button.name}">
+          <span>${button.name}</span>
         </a>
     `;
 

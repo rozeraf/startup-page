@@ -5,7 +5,6 @@
 		<title>Home</title>
 		<link rel=" shortcut icon" type="image/svg" href="assets/icons/favicon.svg" />
 		<link rel="stylesheet" href="app.css" />
-		<script src="https://unpkg.com/lucide@latest"></script>
 	</head>
 
 	<!-- 
@@ -16,12 +15,12 @@
 
 	<body class="">
 		<button id="themeButton">
-			<i id="themeIcon" icon-name="moon"></i>
+			<span id="themeIcon"></span>
 		</button>
 		<div class="container">
 			<!-- Clock and Greetings  -->
 
-			<div class="timeBlock">
+			<div class="card timeBlock">
 				<div class="clock">
 					<div id="time"></div>
 				</div>
@@ -30,7 +29,7 @@
 
 			<!-- Date and Weather  -->
 
-			<div class="weatherBlock">
+			<div class="card weatherBlock">
 				<div class="date">
 					<div id="date"></div>
 				</div>
@@ -67,10 +66,6 @@
 		<script src="assets/js/buttons.js"></script>
 		<script src="assets/js/lists.js"></script>
 
-		<!-- Icons -->
-		<script>
-			lucide.createIcons();
-		</script>
 	</body>
 
 	<!-- Developed and designed by Miguel Ávila: -->

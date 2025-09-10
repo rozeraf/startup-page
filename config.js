@@ -55,7 +55,7 @@ const CONFIG = {
 		{
 			id: '1',
 			name: 'Github',
-			icon: 'github',
+			icon: 'code',
 			link: 'https://github.com/',
 		},
 		{
@@ -73,19 +73,19 @@ const CONFIG = {
 		{
 			id: '4',
 			name: 'r/programming',
-			icon: 'glasses',
+			icon: 'search',
 			link: 'https://reddit.com/r/programming',
 		},
 		{
 			id: '5',
 			name: 'YouTube',
-			icon: 'youtube',
+			icon: 'open-in',
 			link: 'https://youtube.com/',
 		},
 		{
 			id: '6',
 			name: 'learn.js',
-			icon: 'book',
+			icon: 'file-open',
 			link: 'https://learn.javascript.ru',
 		},
 	],
@@ -94,31 +94,31 @@ const CONFIG = {
 		{
 			id: '1',
 			name: 'Music',
-			icon: 'headphones',
+			icon: 'audio',
 			link: 'https://open.spotify.com',
 		},
 		{
 			id: '2',
 			name: 'twitter',
-			icon: 'twitter',
+			icon: 'open-in',
 			link: 'https://twitter.com/',
 		},
 		{
 			id: '3',
 			name: 'bot',
-			icon: 'bot',
+			icon: 'incognito',
 			link: 'https://discord.com/app',
 		},
 		{
 			id: '4',
 			name: 'Amazon',
-			icon: 'shopping-bag',
+			icon: 'open-in',
 			link: 'https://amazon.com/',
 		},
 		{
 			id: '5',
 			name: 'Hashnode',
-			icon: 'pen-tool',
+			icon: 'edit',
 			link: 'https://hashnode.com/',
 		},
 	],
@@ -152,7 +152,7 @@ const CONFIG = {
 			],
 		},
 		{
-			icon: 'tv',
+			icon: 'devices',
 			id: '2',
 			links: [
 				{
@@ -178,7 +178,7 @@ const CONFIG = {
 	// Second Links Container
 	secondListsContainer: [
 		{
-			icon: 'square-user-round',
+			icon: 'account',
 			id: '1',
 			links: [
 				{
@@ -200,7 +200,7 @@ const CONFIG = {
 			],
 		},
 		{
-			icon: 'binary',
+			icon: 'code',
 			id: '2',
 			links: [
 				{

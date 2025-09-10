@@ -5,20 +5,19 @@
 
 let darkTheme = localStorage.getItem('darkTheme');
 const themeToggle = document.querySelector('#themeButton');
+const themeIcon = document.querySelector('#themeIcon');
 const bodyBackground = document.getElementById('#body');
 
 const enableDark = () => {
 	document.body.classList.add('darktheme');
 	localStorage.setItem('darkTheme', 'enabled');
-	themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="sun"></i>`;
-	lucide.createIcons();
+	themeIcon.style.backgroundImage = "url('chrome/icons/circle.svg')";
 };
 
 const disableDark = () => {
 	document.body.classList.remove('darktheme');
 	localStorage.setItem('darkTheme', null);
-	themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="moon"></i>`;
-	lucide.createIcons();
+	themeIcon.style.backgroundImage = "url('chrome/icons/circle-dark.svg')";
 };
 
 if (darkTheme === 'enabled') {

@@ -5,29 +5,21 @@
 
 const generateFirstListsContainer = () => {
 	for (const list of CONFIG.firstlistsContainer) {
+		let listItems = '';
+		for (const link of list.links) {
+			listItems += `
+        <a
+          target="${CONFIG.openInNewTab ? '_blank' : ''}"
+          href="${link.link}"
+          class="listItem"
+          >${link.name}</a>
+      `;
+		}
+
 		let item = `
-        <div class="card list list__${list.id}" id="list_${list.id}">
-          <i class="listIcon" icon-name="${list.icon}"></i>
-          <a
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          href="${list.links[0].link}"
-          class="listItem"
-          >${list.links[0].name}</a>
-          <a
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          href="${list.links[1].link}"
-          class="listItem"
-          >${list.links[1].name}</a>
-          <a
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          href="${list.links[2].link}"
-          class="listItem"
-          >${list.links[2].name}</a>
-          <a
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          href="${list.links[3].link}"
-          class="listItem"
-          >${list.links[3].name}</a>
+        <div class="list list__${list.id}" id="list_${list.id}">
+          <img class="listIcon" src="chrome/icons/${list.icon}.svg" alt="${list.id}">
+          ${listItems}
         </div>
       `;
 		const position = 'beforeend';
@@ -37,29 +29,21 @@ const generateFirstListsContainer = () => {
 
 const generateSecondListsContainer = () => {
 	for (const list of CONFIG.secondListsContainer) {
+		let listItems = '';
+		for (const link of list.links) {
+			listItems += `
+        <a
+          target="${CONFIG.openInNewTab ? '_blank' : ''}"
+          href="${link.link}"
+          class="listItem"
+          >${link.name}</a>
+      `;
+		}
+
 		let item = `
-        <div class="card list list__${list.id}" id="list_${list.id}">
-        <i class="listIcon" icon-name="${list.icon}"></i>
-        <a
-        target="${CONFIG.openInNewTab ? '_blank' : ''}"
-        href="${list.links[0].link}"
-        class="listItem"
-        >${list.links[0].name}</a>
-        <a
-        target="${CONFIG.openInNewTab ? '_blank' : ''}"
-        href="${list.links[1].link}"
-        class="listItem"
-        >${list.links[1].name}</a>
-        <a
-        target="${CONFIG.openInNewTab ? '_blank' : ''}"
-        href="${list.links[2].link}"
-        class="listItem"
-        >${list.links[2].name}</a>
-        <a
-        target="${CONFIG.openInNewTab ? '_blank' : ''}"
-        href="${list.links[3].link}"
-        class="listItem"
-        >${list.links[3].name}</a>
+        <div class="list list__${list.id}" id="list_${list.id}">
+        <img class="listIcon" src="chrome/icons/${list.icon}.svg" alt="${list.id}">
+          ${listItems}
         </div>
       `;
 		const position = 'beforeend';
