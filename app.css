@@ -1,67 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --primary-light: #3b82f6;
-  --accent: #10b981;
-  --accent-dark: #059669;
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --primary-light: #2563eb;
+  --accent: #0d9488;
+  --accent-dark: #0f766e;
+  --accent-light: #14b8a6;
 
-  --background: #f8fafc;
-  --surface: #ffffff;
+  --background: #e8eaf0;
+  --surface: #f8f9fb;
   --surface-elevated: #ffffff;
-  --surface-hover: #f1f5f9;
+  --surface-hover: #eef0f5;
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-tertiary: #94a3b8;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
 
-  --border: #e2e8f0;
-  --border-light: #f1f5f9;
+  --border: #d4d7df;
+  --border-light: #e5e7eb;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px -4px rgba(0, 0, 0, 0.14);
+  --shadow-xl: 0 16px 32px -8px rgba(0, 0, 0, 0.16);
 
-  --fg-primary: 6rem;
-  --fg-secondary: 1.5rem;
-  --fg-date: 1.25rem;
-  --fg-list: 0.95rem;
-  --icon: 24px;
+  --fg-primary: 4.5rem;
+  --fg-secondary: 1.25rem;
+  --fg-date: 1.125rem;
+  --fg-list: 0.9375rem;
+  --icon: 22px;
 
   --imgbg: url(assets/background.jpg);
-  --imgcol: rgba(0, 0, 0, 0.3);
+  --imgcol: rgba(0, 0, 0, 0.35);
 
-  --radius: 16px;
-  --radius-lg: 24px;
+  --radius: 14px;
+  --radius-lg: 18px;
 }
 
 .darktheme {
   --primary: #3b82f6;
   --primary-dark: #2563eb;
   --primary-light: #60a5fa;
-  --accent: #10b981;
-  --accent-dark: #059669;
+  --accent: #14b8a6;
+  --accent-dark: #0d9488;
+  --accent-light: #2dd4bf;
 
-  --background: #0f172a;
-  --surface: #1e293b;
-  --surface-elevated: #334155;
-  --surface-hover: #475569;
+  --background: #0b0f1a;
+  --surface: #141927;
+  --surface-elevated: #1e2433;
+  --surface-hover: #2a3142;
 
-  --text-primary: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-tertiary: #64748b;
+  --text-primary: #e5e9f2;
+  --text-secondary: #b4bcd0;
+  --text-tertiary: #7a8399;
 
-  --border: #334155;
-  --border-light: #1e293b;
+  --border: #262d3e;
+  --border-light: #1e2433;
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 16px -4px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 16px 32px -8px rgba(0, 0, 0, 0.7);
 
-  --imgcol: rgba(0, 0, 0, 0.6);
+  --imgcol: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -129,18 +131,18 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 3rem 2rem;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .hero-section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
 }
 
@@ -150,7 +152,7 @@ body {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .card:hover {
@@ -164,7 +166,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   background: linear-gradient(135deg, var(--surface) 0%, var(--surface-elevated) 100%);
   border: 1px solid var(--border);
   position: relative;
@@ -192,7 +194,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background: linear-gradient(135deg, var(--surface) 0%, var(--surface-elevated) 100%);
 }
 
@@ -276,7 +278,7 @@ body {
   font-size: var(--fg-secondary);
   font-weight: 500;
   color: var(--text-secondary);
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   position: relative;
   z-index: 1;
 }
@@ -285,7 +287,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #date {
@@ -302,13 +304,13 @@ body {
 }
 
 .weatherIcon img {
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .weatherValue p {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -322,7 +324,7 @@ body {
 .linksBlock {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
 }
 
@@ -392,15 +394,16 @@ body {
 }
 
 .buttonIcon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 0.75rem;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.625rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.8;
+  opacity: 0.7;
+  color: var(--text-secondary);
 }
 
 .darktheme .buttonIcon {
-  filter: invert(1);
+  color: var(--text-secondary);
 }
 
 .listsContainer {
@@ -414,7 +417,7 @@ body {
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
@@ -432,15 +435,16 @@ body {
 }
 
 .listIcon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 1rem;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.75rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.7;
+  color: var(--text-secondary);
 }
 
 .darktheme .listIcon {
-  filter: invert(1);
+  color: var(--text-secondary);
 }
 
 .listItem {
@@ -488,27 +492,28 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .container {
-    padding: 2rem 1.5rem;
-    gap: 2rem;
-  }
-
-  .hero-section {
+    padding: 1.5rem 1.25rem;
     gap: 1.5rem;
   }
 
+  .hero-section {
+    gap: 1.25rem;
+  }
+
   #time {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .linksBlock {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 1.5rem 1rem;
-    gap: 1.5rem;
+    padding: 1.25rem;
+    gap: 1.25rem;
   }
 
   #themeButton {
@@ -519,23 +524,23 @@ body {
   }
 
   .hero-section {
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
   #time {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   #greetings {
-    font-size: 1.25rem;
-  }
-
-  #date {
     font-size: 1.125rem;
   }
 
+  #date {
+    font-size: 1rem;
+  }
+
   .search-container {
-    padding: 0.625rem 1.25rem;
+    padding: 0.625rem 1rem;
   }
 
   .search-input {
@@ -543,11 +548,11 @@ body {
   }
 
   .card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .timeBlock {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.25rem;
   }
 
   .weatherValue p {
@@ -555,8 +560,8 @@ body {
   }
 
   .weatherIcon img {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
   }
 
   .buttonsContainer {
@@ -570,13 +575,18 @@ body {
   }
 
   .button {
-    padding: 1.25rem 0.75rem;
+    padding: 1.125rem 0.75rem;
+  }
+
+  .list {
+    padding: 1rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container {
     padding: 1rem;
+    gap: 1rem;
   }
 
   #time {
@@ -585,6 +595,7 @@ body {
 
   #greetings {
     font-size: 1rem;
+    margin-top: 0.5rem;
   }
 
   .search-container {
@@ -597,6 +608,7 @@ body {
 
   .buttonsContainer {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
   }
 
   .weatherValue p {
@@ -605,5 +617,22 @@ body {
 
   .weatherDescription p {
     font-size: 1rem;
+  }
+
+  .weatherIcon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .timeBlock {
+    padding: 1.25rem 1rem;
+  }
+
+  .list {
+    padding: 0.875rem;
   }
 }
